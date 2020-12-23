@@ -2,9 +2,13 @@
 
 ## Contents
 
+* [General Resources](#resources)
 * [Distributed Locking](#locking)
 
 ***
+
+## General Resources <a name="resources"></a>
+* [Baseds - Exploring the basics of distributed systems](https://medium.com/baseds)
 
 ## Distributed Locking <a name="locking"></a>
 
