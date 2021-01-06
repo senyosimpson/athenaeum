@@ -10,6 +10,8 @@ use anyhow::{
 use structopt::StructOpt;
 use handlebars::Handlebars;
 
+const TEMPLATE: &str = std::include_str!("../template");
+
 #[derive(Debug, StructOpt)]
 #[structopt(name="athenaeum", about="A simple CLI for doing common tasks for Athenaeum")]
 enum Opt {
@@ -31,14 +33,15 @@ fn new(title: &str) -> Result<()> {
         .with_context(|| format!("Could not create directory `{}`", title))?;
 
     let handlebars = Handlebars::new();
-    let source = fs::read_to_string("template")
-        .with_context(|| "Could not read file `template`")?;
 
     let mut map = HashMap::new();
     // A prettified title for the template
     let template_title = utils::prettify(title);
     map.insert("title", &template_title);
-    let render = handlebars.render_template(&source, &map).unwrap();
+
+    let render = handlebars
+        .render_template(&TEMPLATE, &map)
+        .unwrap();
 
     // Save the template
     let save_path = format!("{}/README.md", &title); 
