@@ -10,7 +10,7 @@ use anyhow::{
 use structopt::StructOpt;
 use handlebars::Handlebars;
 
-const TEMPLATE: &str = std::include_str!("../template");
+const TEMPLATE: &str = include_str!("../template");
 
 #[derive(Debug, StructOpt)]
 #[structopt(name="athenaeum", about="A simple CLI for doing common tasks for Athenaeum")]
