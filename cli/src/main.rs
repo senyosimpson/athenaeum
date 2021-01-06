@@ -63,25 +63,50 @@ mod utils {
     }
 
     pub fn prettify(title: & str) -> String {
-        match title.contains("-") {
-            true => {
-                let title: Vec<String> = title
-                    .split('-')
-                    .map(|word| capitalize(word))
-                    .collect();
+        let delimiter = match title.contains('-') {
+            true => '-',
+            false => ' '
+        };
 
-                let title = title.join(" ");
-                title
-            },
-            false => {
-                let title: Vec<String> = title
-                    .split_whitespace()
-                    .map(|word| capitalize(word))
-                    .collect();
+        let title: Vec<String> = title
+            .split(delimiter)
+            .map(|word| capitalize(word))
+            .collect();
 
-                let title = title.join(" ");
-                title
-            }
-        }
+        let title = title.join(" ");
+        title
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::utils;
+    #[test]
+    fn prettify() {
+        // All permutations of a hyphenated entry
+        let title = utils::prettify("distributed-systems");
+        assert_eq!(title, "Distributed Systems");
+
+        let title = utils::prettify("Distributed-Systems");
+        assert_eq!(title, "Distributed Systems");
+
+        let title = utils::prettify("Distributed-systems");
+        assert_eq!(title, "Distributed Systems");
+
+        let title = utils::prettify("distributed-Systems");
+        assert_eq!(title, "Distributed Systems");
+
+        // All permutations of a non-hyphenated entry
+        let title = utils::prettify("distributed systems");
+        assert_eq!(title, "Distributed Systems");
+
+        let title = utils::prettify("Distributed Systems");
+        assert_eq!(title, "Distributed Systems");
+
+        let title = utils::prettify("Distributed systems");
+        assert_eq!(title, "Distributed Systems");
+
+        let title = utils::prettify("distributed Systems");
+        assert_eq!(title, "Distributed Systems");
     }
 }
