@@ -4,10 +4,10 @@ A collection of blog posts, talks and papers on software development
 
 ## Contents
 
-* [APIs](athenaeum/APIs/README.md)
-* [Observability](athenaeum/observability/README.md)
-* [Distributed systems](athenaeum/distributed-systems/README.md)
-* [Systems software](athenaeum/systems/README.md)
-* [Microservices](athenaeum/microservices/README.md)
-* [Concurrency](athenaeum/concurrency/README.md)
-* [Software engineering](athenaeum/software-engineering/README.md)
+* [APIs](flower/APIs/README.md)
+* [Observability](flower/observability/README.md)
+* [Distributed systems](flower/distributed-systems/README.md)
+* [Systems software](flower/systems/README.md)
+* [Microservices](flower/microservices/README.md)
+* [Concurrency](flower/concurrency/README.md)
+* [Software engineering](flower/software-engineering/README.md)
