@@ -5,19 +5,17 @@
 * [General Resources]
 * [Distributed Locking]
 
+[General Resources]: #general-resources
+[Distributed Locking]: #distributed-locking
 ***
 
 ## General Resources
-
-[General Resources]: #general-resources
 
 * [Baseds - Exploring the basics of distributed systems](https://medium.com/baseds)
 * [Foundational distributed systems papers](http://muratbuffalo.blogspot.com/2021/02/foundational-distributed-systems-papers.html)
 * [Testing distributed systems](https://github.com/asatarin/testing-distributed-systems)
 
 ## Distributed Locking
-
-[Distributed Locking]: #distributed-locking
 
 ### Blog posts
 

@@ -2,11 +2,12 @@
 
 ## Contents
 
-* [Async Programming](#async)
+* [Async Programming]
 
+[Async Programming]: #async-programming
 ***
 
-## Async Programming <a name="async"></a>
+## Async Programming
 
 ### Blog posts
 
