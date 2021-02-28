@@ -13,7 +13,7 @@ use handlebars::Handlebars;
 const TEMPLATE: &str = include_str!("../template");
 
 #[derive(Debug, StructOpt)]
-#[structopt(name="athenaeum", about="A simple CLI for doing common tasks for Athenaeum")]
+#[structopt(name="flower", about="A simple CLI for doing common tasks for Flower")]
 enum Opt {
     /// Make a new section in the library
     New {
