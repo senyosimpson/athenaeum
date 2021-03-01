@@ -4,7 +4,7 @@
 
 * [Data in microservices]
 
-[Data in microservice]: #data-in-microservices
+[Data in microservices]: #data-in-microservices
 ***
 
 ## Data in microservices
