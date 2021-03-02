@@ -4,9 +4,11 @@
 
 * [General Resources]
 * [Distributed Locking]
+* [Timing]
 
 [General Resources]: #general-resources
 [Distributed Locking]: #distributed-locking
+[Timing]: #timing
 ***
 
 ## General Resources
@@ -20,3 +22,9 @@
 ### Blog posts
 
 * [Showmax: Reliable, Distributed Locking in the Cloud](https://tech.showmax.com/2019/03/sm-cluster-mutex/)
+
+## Timing
+
+### Papers
+
+* [Time, Clocks, and the Ordering of Events in a Distributed System](https://lamport.azurewebsites.net/pubs/time-clocks.pdf)
